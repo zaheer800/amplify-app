@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+/* import AmplifyUIAngularModule  */
+import { AmplifyUIAngularModule } from '@aws-amplify/ui-angular';
 
 @NgModule({
   declarations: [
@@ -10,8 +12,11 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+     /* configure app with AmplifyUIAngularModule */
+  AmplifyUIAngularModule,
   ],
+ 
   providers: [],
   bootstrap: [AppComponent]
 })
