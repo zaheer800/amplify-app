@@ -24,6 +24,7 @@ export class AppComponent implements OnInit {
       'description': ['', Validators.required],
       'city': ['', Validators.required]
     });
+    debugger;
 
      /* fetch restaurants when app loads */
      this.api.ListRestaurants().then(event => {
